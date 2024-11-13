@@ -28,7 +28,8 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: '**.mojin.se'
+        hostname: 'mojin.se'
+        pathname: '/images/fastigheter/**'
       }
     ]
   },
