@@ -31,7 +31,8 @@ const nextConfig = {
         hostname: 'mojin.se',
         pathname: '/images/fastigheter/**'
       }
-    ]
+    ],
+    unoptimized: true  // Add this for Netlify deployments
   },
   webpack: (config) => {
     config.resolve.fallback = {
