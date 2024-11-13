@@ -25,6 +25,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: '**.firebasestorage.googleapis.com'
       }
+      {
+        protocol: 'https',
+        hostname: '**.mojin.se'
+      }
     ]
   },
   webpack: (config) => {
