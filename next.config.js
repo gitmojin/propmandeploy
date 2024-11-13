@@ -7,6 +7,7 @@ const nextConfig = {
       'img.qasa.se',
       'qasa-static-prod.s3-eu-west-1.amazonaws.com',
       'firebasestorage.googleapis.com'
+      'mojin.se'
     ],
     remotePatterns: [
       {
