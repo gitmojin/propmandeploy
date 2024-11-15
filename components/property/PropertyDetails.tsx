@@ -176,13 +176,6 @@ export default function PropertyDetails({ property }: PropertyDetailsProps) {
                 <div className="flex gap-2">
                   <Button
                     variant="outline"
-                    onClick={() => handleContactTenant(unit.tenant)}
-                  >
-                    <Phone className="h-4 w-4 mr-2" />
-                    Contact
-                  </Button>
-                  <Button
-                    variant="outline"
                     onClick={() => {
                       setEditingUnit(unit)
                       setIsUnitFormOpen(true)
