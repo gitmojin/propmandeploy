@@ -165,13 +165,13 @@ export default function PropertyDetails({ property }: PropertyDetailsProps) {
     <div className="container mx-auto p-8">
       <div className="mb-8">
         <div className="flex justify-between items-center mb-4">
-          <h1 className="text-3xl font-bold">{property.address}</h1>
+          <h1 className="text-2xl font-semibold">{property.address}</h1>
           <Button
             variant="outline"
             onClick={() => setIsPropertyFormOpen(true)}
           >
             <Edit className="h-4 w-4 mr-2" />
-            Edit Property
+            Edit
           </Button>
         </div>
         <div className="relative w-full h-64">
