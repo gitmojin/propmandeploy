@@ -8,7 +8,7 @@ export function MainNav() {
         <div className="flex h-16 items-center justify-between">
           <Link 
             href="/" 
-            className="flex items-center space-x-2 text-xl font-bold"
+            className="flex items-center space-x-2 text-sm font-medium"
           >
             <Building2 className="h-5 w-5" />
             <span>Properties</span>
