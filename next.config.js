@@ -7,7 +7,8 @@ const nextConfig = {
       'img.qasa.se',
       'qasa-static-prod.s3-eu-west-1.amazonaws.com',
       'firebasestorage.googleapis.com',
-      'mojin.se'
+      'mojin.se',
+      'netlify.app'
     ],
     remotePatterns: [
       {
@@ -30,6 +31,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'mojin.se',
         pathname: '/images/fastigheter/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'netlify.app',
       }
     ],
     unoptimized: true  // Add this for Netlify deployments
