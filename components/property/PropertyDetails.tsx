@@ -208,7 +208,7 @@ export default function PropertyDetails({ property }: PropertyDetailsProps) {
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
                   <Building2 className="h-5 w-5" />
-                  <h2 className="text-xl font-semibold">Unit {unit.number}</h2>
+                  <h2 className="text-xl font-semibold">{unit.number}</h2>
                 </div>
                 <div className="flex gap-2">
                   <Button
@@ -216,7 +216,7 @@ export default function PropertyDetails({ property }: PropertyDetailsProps) {
                     onClick={() => handleContactTenant(unit.tenant)}
                   >
                     <Phone className="h-4 w-4 mr-2" />
-                    Contact Tenant
+                    Contact
                   </Button>
                   <Button
                     variant="outline"
