@@ -179,6 +179,7 @@ export default function PropertyDetails({ property }: PropertyDetailsProps) {
           {renderImage(property.image || "/placeholder-property.jpg")}
         </div>
         */
+        /*
         <div className="relative h-48 w-full">
         <Image
           src={property.image || "/placeholder-property.jpg"}
@@ -188,7 +189,7 @@ export default function PropertyDetails({ property }: PropertyDetailsProps) {
           unoptimized={process.env.NODE_ENV === 'development'}
         />
       </div>
-
+        */
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-semibold">Units</h2>
         <Button onClick={() => setIsUnitFormOpen(true)}>
