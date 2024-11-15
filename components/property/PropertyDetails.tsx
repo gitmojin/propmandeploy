@@ -137,30 +137,6 @@ export default function PropertyDetails({ property }: PropertyDetailsProps) {
     }
   }
 
-  const renderImage = (src: string) => {
-    try {
-      return (
-        <Image 
-          src={src}
-          alt="Property"
-          fill
-          className="object-cover rounded-lg"
-          unoptimized={process.env.NODE_ENV === 'development'}
-        />
-      )
-    } catch (error) {
-      return (
-        <Image 
-          src="/placeholder-property.jpg"
-          alt="Property"
-          fill
-          className="object-cover rounded-lg"
-          unoptimized={process.env.NODE_ENV === 'development'}
-        />
-      )
-    }
-  }
-
   return (
     <div className="container mx-auto p-8">
       <div className="mb-8">
@@ -174,22 +150,17 @@ export default function PropertyDetails({ property }: PropertyDetailsProps) {
             Edit
           </Button>
         </div>
-        /*
-        <div className="relative w-full h-64">
-          {renderImage(property.image || "/placeholder-property.jpg")}
-        </div>
-        */
-        /*
         <div className="relative h-48 w-full">
-        <Image
-          src={property.image || "/placeholder-property.jpg"}
-          alt={`Property at ${property.address}`}
-          fill
-          className="object-cover"
-          unoptimized={process.env.NODE_ENV === 'development'}
-        />
+          <Image
+            src={property.image || "/placeholder-property.jpg"}
+            alt={`Property at ${property.address}`}
+            fill
+            className="object-cover"
+            unoptimized={process.env.NODE_ENV === 'development'}
+          />
+        </div>
       </div>
-        */
+
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-semibold">Units</h2>
         <Button onClick={() => setIsUnitFormOpen(true)}>
@@ -280,8 +251,14 @@ export default function PropertyDetails({ property }: PropertyDetailsProps) {
                           <p className="text-sm">{record.description}</p>
                         </div>
                         {record.images?.map((image, imgIndex) => (
-                          <div key={imgIndex} className="relative w-24 h-24">
-                            {renderImage(image)}
+                          <div key={imgIndex} className="relative h-24 w-24">
+                            <Image
+                              src={image}
+                              alt="Maintenance record"
+                              fill
+                              className="object-cover rounded-lg"
+                              unoptimized={process.env.NODE_ENV === 'development'}
+                            />
                           </div>
                         ))}
                       </div>
