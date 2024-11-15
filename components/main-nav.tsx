@@ -11,7 +11,7 @@ export function MainNav() {
             className="flex items-center space-x-2 text-xl font-bold"
           >
             <Building2 className="h-6 w-6" />
-            <span>Property Manager</span>
+            <span>Properties</span>
           </Link>
           
           <div className="flex items-center space-x-6">
