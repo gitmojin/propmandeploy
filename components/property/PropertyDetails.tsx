@@ -174,9 +174,19 @@ export default function PropertyDetails({ property }: PropertyDetailsProps) {
             Edit
           </Button>
         </div>
+        /*
         <div className="relative w-full h-64">
           {renderImage(property.image || "/placeholder-property.jpg")}
         </div>
+        */
+        <div className="relative h-48 w-full">
+        <Image
+          src={property.image || "/placeholder-property.jpg"}
+          alt={`Property at ${property.address}`}
+          fill
+          className="object-cover"
+          unoptimized={process.env.NODE_ENV === 'development'}
+        />
       </div>
 
       <div className="flex justify-between items-center mb-6">
